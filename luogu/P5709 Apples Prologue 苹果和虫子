@@ -1,0 +1,26 @@
+// Created on 张哲涵的iPad.
+// Key: 剩半个的苹果不算完整的, 时间为0全部吃光
+
+#include<bits/stdc++.h>
+
+using namespace std;
+int main(){
+    int m,t,s;
+	cin>>m>>t>>s;
+	if(t==0) 
+    {
+        cout<<0;
+    }
+	else
+    {
+	    if(s%t==0)
+        {
+            cout<<max(0,m-s/t);
+        }
+	    else 
+        {
+            cout<<max(0,m-s/t-1);
+        }
+	}
+    return 0;
+}
